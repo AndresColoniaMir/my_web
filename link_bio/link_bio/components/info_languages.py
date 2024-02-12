@@ -12,8 +12,7 @@ def info_languages(image: str, title:str) -> rx.Component:
         rx.image(
             src=image,
             width=styles.Size.LARGE.value,
-            height=styles.Size.LARGE.value,
-            color=Color.PRIMARY.value
+            height=styles.Size.LARGE.value
         ),
         rx.text(
             f" {title} ",

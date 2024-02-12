@@ -28,6 +28,7 @@ def header() -> rx.Component:
                 link_icon("icons/linkedin.svg","https://github.com/AndresColoniaMir"),
                 #link_icon("icons/x-twitter.svg","https://github.com/AndresColoniaMir"),
                 #link_icon("icons/instagram.svg","https://github.com/AndresColoniaMir"),
+                width="100%",
                 spacing=Size.LARGE.value
                 ),
                 align_items="start"
@@ -57,6 +58,7 @@ def header() -> rx.Component:
         ),
         width="100%",
         spacing=Size.BIG.value,  
+        align_items="start"
     )
     
     

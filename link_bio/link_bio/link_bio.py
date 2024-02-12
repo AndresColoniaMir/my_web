@@ -34,6 +34,7 @@ app = rx.App(
 
 app.add_page(
     index,
+    image="A-Favicon-01.ico",
     title="Andrés Colonia - Desarrollador junior de Software",
     description="Conoce a Andrés Colonia, un desarrollador junior de software con experiencia en Java, Python, Android y más."  
 )
