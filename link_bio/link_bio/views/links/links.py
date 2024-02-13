@@ -1,5 +1,7 @@
 import reflex as rx
+import link_bio.constants as constants
 from link_bio.components.link_button import links_button
+from link_bio.components.download_button import download_button
 from link_bio.components.title import title
 from link_bio.styles.styles import Size as Size
 
@@ -10,58 +12,38 @@ def links() -> rx.Component:
             "Short URL",
             "Acorta tus enlaces fácilmente.",
             "icons/link-solid.svg",
-            "https://github.com/AndresColoniaMir"
+            constants.SHORT_URL
             ),
         links_button(
             "Typo Gunslinger",
             "Juego tipográfico al oeste.",
             "icons/keyboard-solid.svg",
-            "https://www.linkedin.com/in/andres-colonia-dev"
+            constants.TYPO_GUNSLINGER
             ),
             links_button(
             "QuirkyWeatherWizard",
             "Clima con humor personalizado.",
             "icons/cloud-solid.svg",
-            "https://github.com/AndresColoniaMir"
+            constants.QUIRKY_WEATHER_WIZARD
             ),
         links_button(
             "RPS Versus",
             "proyecto de juego de piedra, papel o tijera con mecánicas interesantes.",
             "icons/scissors-solid.svg",
-            "https://www.linkedin.com/in/andres-colonia-dev"
+            constants.RPS_VERSUS
             ),
-            title("Recursos útiles"),
-        links_button(
-            "GitHub",
-            "Repo de todos mis proyecto",
-            "icons/github.svg",
-            "https://github.com/AndresColoniaMir"
-            ),
-        links_button(
-            "Linkedin",
-            "Contrata me ahora",
-            "icons/github.svg",
-            "https://www.linkedin.com/in/andres-colonia-dev"
-            ),
-            links_button(
-            "GitHub",
-            "Repo de todos mis proyecto",
-            "icons/github.svg",
-            "https://github.com/AndresColoniaMir"
-            ),
-        links_button(
-            "Linkedin2",
-            "Contrata me ahora",
-            "icons/github.svg",
-            "https://www.linkedin.com/in/andres-colonia-dev"
-            ),
-        
-        title("Contacto"),
+        title("Contacto y CV"),
         links_button(
             "Email",
             "andrescolonia24@gmail.com",
             "icons/envelope-solid.svg",
-            "mailto:andrescolonia24@gmail.com"
+            f"mailto:{constants.EMAIL}"
+            ),
+        download_button(
+            "CV",
+            "Descarga mi CV",
+            "icons/file-solid.svg",
+            "/Andres Colonia-CV-2023-v3.pdf"
             ),
         width="100%",
         spacing=Size.MEDIUM.value,

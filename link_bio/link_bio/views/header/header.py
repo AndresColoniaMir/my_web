@@ -1,4 +1,5 @@
 import reflex as rx
+import link_bio.constants as constants
 from link_bio.components.link_icon import link_icon
 from link_bio.components.info_languages import info_languages
 from link_bio.styles.styles import Size as Size
@@ -24,10 +25,8 @@ def header() -> rx.Component:
                     color = TextColor.HEADER.value
                 ),
                 rx.hstack(
-                link_icon("icons/github.svg","https://github.com/AndresColoniaMir"),
-                link_icon("icons/linkedin.svg","https://github.com/AndresColoniaMir"),
-                #link_icon("icons/x-twitter.svg","https://github.com/AndresColoniaMir"),
-                #link_icon("icons/instagram.svg","https://github.com/AndresColoniaMir"),
+                link_icon("icons/github.svg",constants.GITHUB_URL),
+                link_icon("icons/linkedin.svg",constants.LINKEDIN_URL),
                 width="100%",
                 spacing=Size.LARGE.value
                 ),
@@ -36,16 +35,17 @@ def header() -> rx.Component:
             spacing=Size.BIG.value,
         ),
         rx.hstack(
-                info_languages("icons/java.svg","Java"),
+                info_languages("icons/java.svg"),
                 rx.spacer(),
-                info_languages("icons/python.svg","Python"),
+                info_languages("icons/python.svg"),
                 rx.spacer(),
-                info_languages("icons/html5.svg","HTML"),
+                info_languages("icons/html5.svg"),
                 rx.spacer(),
-                info_languages("icons/css3-alt.svg","CSS"),
+                info_languages("icons/css3-alt.svg"),
                 rx.spacer(),
-                info_languages("icons/android.svg","Android"),
-                width="100%"
+                info_languages("icons/android.svg"),
+                width="100%",
+                #margin_bottom=Size.BIG.value
         ),
         rx.text(
             """Lorem ipsum dolor sit amet, consectetur adipiscing elit,
