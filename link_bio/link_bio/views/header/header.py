@@ -45,16 +45,15 @@ def header() -> rx.Component:
                 rx.spacer(),
                 info_languages("icons/android.svg"),
                 width="100%",
-                #margin_bottom=Size.BIG.value
         ),
         rx.text(
-            """Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna
-                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                 """,
-                 font_size=Size.DEFAULT.value,
-                 color=TextColor.BODY.value
+            """¡Bienvenidos a mi mundo digital! Soy Andrés Colonia, 
+            desarrollador de software con un enfoque backend, habil
+            en Java, Python, C#, HTML, CSS y SQL,
+            mi compromiso es llevar tu proyecto al siguiente
+            nivel.""",
+            font_size=Size.DEFAULT.value,
+            color=TextColor.BODY.value
         ),
         width="100%",
         spacing=Size.BIG.value,  

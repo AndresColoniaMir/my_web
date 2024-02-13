@@ -1,13 +1,14 @@
 from enum import Enum
 
 class Color(Enum):
-    PRIMARY = "#5B7CFB"
-    SECONDARY = "#11354d"
-    BACKGROUND = "#08243f"
-    CONTENT = "#15304f"
+    PRIMARY = "#7EF7F7"
+    SECONDARY = "#15304f"
+    BACKGROUND = "#051b30"
+    CONTENT = "#08243f"
     ANALOGOUS = "#FAF3FF" 
     
-#5B7CFB 0cb3ad
+#button hobber 15304f
+#5B7CFB 0cb3ad #042ccc 7EF7F7 051b30
 class TextColor(Enum):
     HEADER = "#F1F2F4"
     BODY = "#C3C7CB"

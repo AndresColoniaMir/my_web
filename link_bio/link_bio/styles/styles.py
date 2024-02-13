@@ -46,7 +46,7 @@ BASE_STYLE = {
         "white_space": "normal",
         "text_align": "start",
         "_hover": {
-            "background_color": Color.PRIMARY.value
+            "background_color": Color.SECONDARY.value
         }
     },
     rx.Link: {
