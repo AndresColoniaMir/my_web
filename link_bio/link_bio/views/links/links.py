@@ -28,7 +28,7 @@ def links() -> rx.Component:
             ),
         links_button(
             "RPS Versus",
-            "Juego de cartas estratégico basado en el clasico piedra, papel o tijera.",
+            "Juego de cartas estratégico basado en el clásico piedra, papel o tijera.",
             "icons/scissors-solid.svg",
             constants.RPS_VERSUS
             ),

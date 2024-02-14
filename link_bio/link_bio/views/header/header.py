@@ -20,7 +20,7 @@ def header() -> rx.Component:
             ),
             rx.vstack(
                 rx.heading(
-                    "Andrés Coloniass",
+                    "Andrés Colonia",
                     size="lg",
                     color = TextColor.HEADER.value
                 ),
@@ -48,7 +48,7 @@ def header() -> rx.Component:
         ),       
         rx.text(
             """¡Bienvenidos a mi mundo digital! Soy Andrés Colonia, 
-            desarrollador de software con un enfoque backend, habil
+            desarrollador de software con un enfoque backend, hábil
             en Java, Python, C#, HTML, CSS y SQL,
             mi compromiso es llevar tu proyecto al siguiente
             nivel.""",
