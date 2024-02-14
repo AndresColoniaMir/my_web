@@ -16,19 +16,19 @@ def links() -> rx.Component:
             ),
         links_button(
             "Typo Gunslinger",
-            "Juego tipográfico al oeste.",
+            "Desafíos tipográficos con un toque del salvaje oeste.",
             "icons/keyboard-solid.svg",
             constants.TYPO_GUNSLINGER
             ),
             links_button(
             "QuirkyWeatherWizard",
-            "Clima con humor personalizado.",
+            "Clima y humor personalizado.",
             "icons/cloud-solid.svg",
             constants.QUIRKY_WEATHER_WIZARD
             ),
         links_button(
             "RPS Versus",
-            "proyecto de juego de piedra, papel o tijera con mecánicas interesantes.",
+            "Juego de cartas estratégico basado en el clasico piedra, papel o tijera.",
             "icons/scissors-solid.svg",
             constants.RPS_VERSUS
             ),
