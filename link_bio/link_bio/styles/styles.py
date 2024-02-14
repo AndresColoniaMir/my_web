@@ -12,7 +12,8 @@ MAX_WIDTH= "560px"
 # Fonts
 STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap",
+    "/css/styles.css"
 ]
 
 # Sizes
@@ -79,5 +80,4 @@ button_body_style = dict(
     font_size=Size.MEDIUM.value,
     color=TextColor.BODY.value
 )
-
 

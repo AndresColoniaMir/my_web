@@ -20,7 +20,7 @@ def header() -> rx.Component:
             ),
             rx.vstack(
                 rx.heading(
-                    "Andrés Colonia",
+                    "Andrés Coloniass",
                     size="lg",
                     color = TextColor.HEADER.value
                 ),
@@ -35,17 +35,17 @@ def header() -> rx.Component:
             spacing=Size.BIG.value,
         ),
         rx.hstack(
-                info_languages("icons/java.svg"),
-                rx.spacer(),
-                info_languages("icons/python.svg"),
-                rx.spacer(),
-                info_languages("icons/html5.svg"),
-                rx.spacer(),
-                info_languages("icons/css3-alt.svg"),
-                rx.spacer(),
-                info_languages("icons/android.svg"),
-                width="100%",
-        ),
+            info_languages("icons/java.svg"),
+            rx.spacer(),
+            info_languages("icons/python.svg"),
+            rx.spacer(),
+            info_languages("icons/html5.svg"),
+            rx.spacer(),
+            info_languages("icons/css3-alt.svg"),
+            rx.spacer(),
+            info_languages("icons/android.svg"),
+            width="100%",
+        ),       
         rx.text(
             """¡Bienvenidos a mi mundo digital! Soy Andrés Colonia, 
             desarrollador de software con un enfoque backend, habil

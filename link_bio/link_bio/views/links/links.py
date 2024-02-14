@@ -43,7 +43,7 @@ def links() -> rx.Component:
             "CV",
             "Descarga mi CV",
             "icons/file-solid.svg",
-            "/Andres Colonia-CV-2023-v3.pdf"
+            "/pdfs/Andres Colonia-CV-2023-v3.pdf"
             ),
         width="100%",
         spacing=Size.MEDIUM.value,

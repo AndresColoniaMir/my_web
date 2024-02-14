@@ -31,7 +31,7 @@ def fotter() -> rx.Component:
                     width=Size.LARGE.value
                 ),
                 rx.text(
-                    "Heco con <3",
+                    "HECHO CON <3 Y PACIENCIA",
                     font_size=Size.MEDIUM.value,
                     margin_top=Size.ZERO.value
                 )
