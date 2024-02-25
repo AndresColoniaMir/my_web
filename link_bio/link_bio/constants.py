@@ -1,3 +1,6 @@
+# Comunes
+G_TAG = "G-5HN9CDXKP9"
+
 # Cabecera
 GITHUB_URL = "https://github.com/AndresColoniaMir"
 LINKEDIN_URL = "https://linkedin.com/in/andres-colonia-dev/"

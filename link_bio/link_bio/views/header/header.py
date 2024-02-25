@@ -25,26 +25,14 @@ def header() -> rx.Component:
                     color = TextColor.HEADER.value
                 ),
                 rx.hstack(
-                link_icon("icons/github.svg",constants.GITHUB_URL),
-                link_icon("icons/linkedin.svg",constants.LINKEDIN_URL),
+                link_icon("icons/github.svg",constants.GITHUB_URL, "GitHub-icon"),
+                link_icon("icons/linkedin.svg",constants.LINKEDIN_URL, "LinkedIn-icon"),
                 width="100%",
                 spacing=Size.LARGE.value
                 ),
                 align_items="start"
             ),
             spacing=Size.BIG.value,
-        ),
-        rx.hstack(
-            info_languages("icons/java.svg"),
-            rx.spacer(),
-            info_languages("icons/python.svg"),
-            rx.spacer(),
-            info_languages("icons/html5.svg"),
-            rx.spacer(),
-            info_languages("icons/css3-alt.svg"),
-            rx.spacer(),
-            info_languages("icons/android.svg"),
-            width="100%",
         ),       
         rx.text(
             """¡Bienvenidos a mi mundo digital! Soy Andrés Colonia, 

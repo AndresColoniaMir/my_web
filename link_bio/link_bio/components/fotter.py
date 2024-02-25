@@ -27,8 +27,10 @@ def fotter() -> rx.Component:
             rx.hstack(
                 rx.image(
                     src="/icons/github.svg",
+                    width=Size.LARGE.value,
                     height=Size.LARGE.value,
-                    width=Size.LARGE.value
+                    alt="GitHub",
+                    
                 ),
                 rx.text(
                     "HECHO CON <3 Y PACIENCIA",
