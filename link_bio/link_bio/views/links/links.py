@@ -1,13 +1,19 @@
+from ctypes import alignment
 import reflex as rx
 import link_bio.constants as constants
 from link_bio.components.link_button import links_button
 from link_bio.components.title import title
-from link_bio.views.lenguajes import lenguajes
 from link_bio.styles.styles import Size as Size
+from link_bio.routes import Route
 
 def links() -> rx.Component:
     return rx.vstack(
-        title("Ultimos Proyectos"),
+        rx.link(
+            title("Ultimos Proyectos"),
+            href=Route.PROJECTS.value,
+            width="100%",
+            alignment="start"
+        ),
         links_button(
             "Short URL",
             "Acorta tus enlaces fácilmente.",
@@ -45,7 +51,6 @@ def links() -> rx.Component:
             "icons/file-arrow-down-solid.svg",
             "/pdfs/AndresColonia-CV-2023-v3.pdf"
         ),
-        lenguajes(),
         width="100%",
         spacing=Size.MEDIUM.value,
     )

@@ -18,3 +18,4 @@ EMAIL = "andrescolonia24@gmail.com"
 
 # Otros
 GITHUB_WEB = "https://github.com/AndresColoniaMir/my_web.git"
+COFFEE_URL = "https://www.buymeacoffee.com/andrescolonia"
