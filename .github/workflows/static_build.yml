@@ -1,4 +1,4 @@
-name: Static Build
+name: Static Buid
 
 on:
   push:
