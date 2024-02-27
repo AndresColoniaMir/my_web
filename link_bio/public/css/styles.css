@@ -1,3 +1,8 @@
+body {
+    overflow-y: scroll;
+}
+
+
 @keyframes blinker {
     50% { opacity: 0; }
 }
