@@ -4,6 +4,9 @@ import link_bio.constants as const
 from link_bio.pages.index import index
 from link_bio.pages.projets import projects
 
+class State(rx.State):
+    """Define the state of the app."""
+    
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
     style=styles.BASE_STYLE, # type: ignore
