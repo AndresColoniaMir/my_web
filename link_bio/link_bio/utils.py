@@ -23,4 +23,7 @@ index_meta = [
 ]
 index_meta.extend(_meta)
 
+# DATE LOCAL
+
+LOCAL_TIMEZONE_SCRIPT = "Intl.DateTimeFormat().resolvedOptions().timeZone"
 

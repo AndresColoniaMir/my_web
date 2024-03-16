@@ -6,7 +6,8 @@ from link_bio.components.navbar import navbar
 from link_bio.views.header.header import header
 from link_bio.components.fotter import fotter
 from link_bio.styles.styles import Size as Size
-from link_bio.views.lenguajes import lenguajes
+from link_bio.views.links.projets_links import projets_links
+#from link_bio.views.lenguajes import lenguajes
 from link_bio.routes import Route
 
 
@@ -25,6 +26,7 @@ def projects() -> rx.Component:
         rx.center(
             rx.vstack(
             header(False),
+            projets_links(),
             max_width=styles.MAX_WIDTH,
             width="100%",
             margin_y=Size.BIG.value,

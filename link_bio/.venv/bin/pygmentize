@@ -1,4 +1,4 @@
-#!/home/andrescolonia/Documents/my_web/link_bio/.venv/bin/python3
+#!/home/andrescolonia/my_web/link_bio/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,19 +1,24 @@
-from ctypes import alignment
 import reflex as rx
 import link_bio.constants as constants
+
 from link_bio.components.link_button import links_button
 from link_bio.components.title import title
-from link_bio.styles.styles import Size as Size
+from link_bio.styles.styles import Size as Size, Spacing
 from link_bio.routes import Route
+from link_bio.styles.colors import Color as Color
 
 def links() -> rx.Component:
     return rx.vstack(
-        rx.link(
-            title("Ultimos Proyectos"),
-            href=Route.PROJECTS.value,
-            width="100%",
-            alignment="start"
+        title("Proyectos"),
+        links_button(
+            "Proyectos",
+            "Echa un vistazo a todos mis proyectos",
+            "icons/terminal-solid.svg",
+            Route.PROJECTS.value,
+            is_external=False,
+            highlight_color=Color.PRIMARY.value
         ),
+        title("Ultimos Proyectos"),
         links_button(
             "Short URL",
             "Acorta tus enlaces fácilmente.",
@@ -49,8 +54,8 @@ def links() -> rx.Component:
             "CV",
             "Ver y descarga mi CV",
             "icons/file-arrow-down-solid.svg",
-            "/pdfs/AndresColonia-CV-2023-v3.pdf"
+            "/pdfs/AndresColonia-CV-2024-v6.pdf"
         ),
         width="100%",
-        spacing=Size.MEDIUM.value,
+        spacing=Spacing.DEFAULT.value,
     )

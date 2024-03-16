@@ -3,9 +3,8 @@ import link_bio.styles.styles as styles
 import link_bio.constants as const
 from link_bio.pages.index import index
 from link_bio.pages.projets import projects
+from link_bio.api.api import live_playing, hello
 
-class State(rx.State):
-    """Define the state of the app."""
     
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
@@ -23,4 +22,7 @@ gtag('config', '{const.G_TAG}');
         ),
     ],
 )
+
+app.api.add_api_route("/hello", hello) # type: ignore
+app.api.add_api_route("/live_playing", live_playing) # type: ignore
 

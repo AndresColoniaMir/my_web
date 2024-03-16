@@ -9,19 +9,11 @@ from link_bio.components.ant_components import float_button
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.link(        
+        rx.link(
             rx.box(
-                rx.span(
-                    "Andréss",
-                    font_family=Font.TITLE.value,
-                    color=Color.PRIMARY.value
-                ),
-                rx.span(
-                    "Colonia",
-                    font_family=Font.DEFAULT.value,
-                    color=Color.ANALOGOUS.value
-                ),
-                style=styles.navbar_title_style, # type: ignore
+                rx.text("Andrés", as_="span", color=Color.PRIMARY.value),
+                rx.text("Colonia", as_="span", color=Color.ANALOGOUS.value),
+                style=styles.navbar_title_style # type: ignore
             ),
             href=Route.INDEX.value,
         ),
