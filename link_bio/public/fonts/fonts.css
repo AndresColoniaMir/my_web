@@ -1,0 +1,45 @@
+/* https://monaspace.githubnext.com */
+
+/* normal, bold */
+
+@font-face {
+    font-family: "Monaspace Argon";
+    font-weight: normal;
+    src: url("MonaspaceArgon-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Monaspace Argon";
+    font-weight: bold;
+    src: url("MonaspaceArgon-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Monaspace Radon";
+    font-weight: normal;
+    src: url("MonaspaceRadon-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Monaspace Radon";
+    font-weight: bold;
+    src: url("MonaspaceRadon-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Monaspace Krypton";
+    font-weight: normal;
+    src: url("MonaspaceKrypton-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Monaspace Krypton";
+    font-weight: bold;
+    src: url("MonaspaceKrypton-Bold.woff") format("woff");
+    font-display: swap;
+}
