@@ -11,46 +11,39 @@ def projets_links() -> rx.Component:
     return rx.vstack(
         title("Proyectos"),
         card_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
+            "Este sitio web",
+            "Web personal con enlaces a mis proyectos y CV.",
+            "/my_web.png",
+            constants.GITHUB_WEB,
+            "#"
         ),
         card_button(
-            "Short URL",
+            "Short URL (W.I.P)",
             "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
+            "/icons/link-solid.svg",
+            constants.SHORT_URL,
+            "#"
         ),
         card_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
+            "Typo Gunslinger (W.I.P)",
+            "Desafíos tipográficos con un toque del salvaje oeste.",
+            "/icons/keyboard-solid.svg",
+            constants.TYPO_GUNSLINGER,
+            "#"
         ),
         card_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
+            "QuirkyWeatherWizard (W.I.P)",
+            "Clima y humor personalizado.",
+            "/icons/cloud-solid.svg",
+            constants.QUIRKY_WEATHER_WIZARD,
+            "#"
         ),
         card_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
-        ),
-        card_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
-        ),
-        card_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "/icons/terminal-solid.svg",
-            constants.SHORT_URL
+            "RPS Versus (W.I.P)",
+            "Juego de cartas estratégico basado en el clásico piedra, papel o tijera.",
+            "/icons/scissors-solid.svg",
+            constants.RPS_VERSUS,
+            "#"
         ),
         width="100%",
         spacing=Spacing.DEFAULT.value,

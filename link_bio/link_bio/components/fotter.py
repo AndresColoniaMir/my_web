@@ -1,10 +1,12 @@
 import reflex as rx
 import datetime
+import link_bio.styles.styles as styles
 import link_bio.constants as constants
+
 from link_bio.styles.styles import Size as Size, Spacing
 from link_bio.styles.colors import TextColor as TextColor
 from link_bio.styles.colors import Color as Color
-
+from link_bio.components.glow_greetinng import glow_greetinng
 
 def fotter() -> rx.Component:
     return rx.vstack(
@@ -15,9 +17,7 @@ def fotter() -> rx.Component:
                         font_size=Size.MEDIUM.value
                     ),
                     rx.text(
-                        "Andrés Colonia.",
-                        color=Color.PRIMARY.value,
-                        font_size=Size.DEFAULT.value
+                        glow_greetinng("Andrés Colonia.", Color.PRIMARY.value)
                     ),
                 ),
                 href="https://github.com/AndresColoniaMir",
