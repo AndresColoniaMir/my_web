@@ -10,7 +10,7 @@ from link_bio.styles.colors import Color, TextColor
 class PageState(rx.State):
 
     timezone = ""
-    now: datetime = datetime.now()
+    now: int
     greeting = ""
     greeting_color = ""
 
@@ -30,7 +30,7 @@ class PageState(rx.State):
 
 
     def check_timezone(self):
-        if self.timezone == "":
+        if self.timezone == "" and self.now == 0:
             return rx.call_script(
                 utils.LOCAL_TIMEZONE_SCRIPT,
                 PageState.update_timezone
@@ -40,13 +40,13 @@ class PageState(rx.State):
 
     def update_timezone(self, timezone: str):
         self.timezone = timezone
-        self.now = datetime.now(pytz.timezone(timezone))
+        self.now = datetime.now(pytz.timezone(timezone)).hour
     
     def update_greeting(self):
-        if self.now.hour < 12:
+        if self.now < 12:
             self.greeting = "¡Buenos días! 🌞."
             self.greeting_color = TextColor.YELLOW.value
-        elif self.now.hour < 18:
+        elif self.now < 18:
             self.greeting = "¡Hey! ¡Buenas tardes! 😊."
             self.greeting_color = Color.PRIMARY.value
         else:

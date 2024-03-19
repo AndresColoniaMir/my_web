@@ -21,6 +21,7 @@ def fotter() -> rx.Component:
                             Color.PRIMARY.value
                         ),
                     ),
+                    align="center",
                 ),
                 href="https://github.com/AndresColoniaMir",
                 is_external=True
@@ -35,10 +36,11 @@ def fotter() -> rx.Component:
                     
                 ),
                 rx.text(
-                    "HECHO CON <3 Y PACIENCIA",
+                    "Con la esencia colombiana en cada línea de código ☕️",
                     font_size=Size.MEDIUM.value,
                     margin_top=Size.ZERO.value
-                )
+                ),
+                align="center",
             ),
             href=constants.GITHUB_WEB,
             is_external=True

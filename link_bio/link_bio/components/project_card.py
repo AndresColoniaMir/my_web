@@ -18,7 +18,7 @@ def project_card(title:str,
                 width="100%",
                 height="100%",
                 alt=title,
-                border_radius=f"{Size.DEFAULT.value} {Size.DEFAULT.value} 0 0"
+                border_radius=f"{Size.SMALL.value} {Size.SMALL.value} 0 0"
             ),
             side="top",
         ),

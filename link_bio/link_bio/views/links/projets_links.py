@@ -20,28 +20,28 @@ def projets_links() -> rx.Component:
         project_card(
             "Short URL (W.I.P)",
             "Acorta tus enlaces fácilmente.",
-            "/icons/link-solid.svg",
+            "/images/Short_URL.jpg",
             constants.SHORT_URL,
             "#"
         ),
         project_card(
             "Typo Gunslinger (W.I.P)",
             "Desafíos tipográficos con un toque del salvaje oeste.",
-            "/icons/keyboard-solid.svg",
+            "/images/Typo_Gunslinger.jpg",
             constants.TYPO_GUNSLINGER,
             "#"
         ),
         project_card(
             "QuirkyWeatherWizard (W.I.P)",
             "Clima y humor personalizado.",
-            "/icons/cloud-solid.svg",
+            "/images/QuirkyWeatherWizard.jpg",
             constants.QUIRKY_WEATHER_WIZARD,
             "#"
         ),
         project_card(
             "RPS Versus (W.I.P)",
             "Juego de cartas estratégico basado en el clásico piedra, papel o tijera.",
-            "/icons/scissors-solid.svg",
+            "/images/RPS_Versus.jpg",
             constants.RPS_VERSUS,
             "#"
         ),
