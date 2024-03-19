@@ -36,12 +36,14 @@ def header(details = True) -> rx.Component:
                     link_icon(
                         "/icons/github.svg",
                         constants.GITHUB_URL,
-                        "GitHub-icon"
+                        "GitHub",
+                        "bottom"
                     ),
                     link_icon(
                         "/icons/linkedin.svg",
                         constants.LINKEDIN_URL,
-                        "LinkedIn-icon"
+                        "LinkedIn",
+                        "bottom"
                     ),
                     spacing=Spacing.DEFAULT.value,
                     padding_top=Size.SMALL.value
@@ -74,7 +76,7 @@ def header(details = True) -> rx.Component:
             rx.vstack(
                 rx.text(
                     glow_greetinng(f"{PageState.greeting}", PageState.greeting_color), 
-                    """ Soy Andrés Colonia, desarrollador de software,
+                    """ Soy Andrés Colonia, desarrollador,
                     hábil en Java, Python, C#, HTML, CSS y SQL, mi compromiso es 
                     llevar tu proyecto al siguiente
                     nivel.""",
@@ -84,7 +86,7 @@ def header(details = True) -> rx.Component:
                 ),
                 width="100%",
                 spacing=Spacing.BIG.value
-            )
+            ),
         ),
         width="100%",
         spacing=Spacing.BIG.value,

@@ -138,4 +138,17 @@ glow_text_style = {
         }
     }
 }
-
+project_card_style = dict(
+        width="100%",
+        height="100%",
+        padding=Size.SMALL.value,
+        border_radius=Size.DEFAULT.value,
+        color=TextColor.HEADER.value,
+        background_color=Color.CONTENT.value,
+        white_space="normal",
+        text_align="start",
+        __cursor_button="pointer",
+        _hover={
+            "background_color": Color.SECONDARY.value
+        }
+)

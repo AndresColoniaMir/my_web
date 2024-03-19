@@ -20,40 +20,46 @@ def links() -> rx.Component:
         ),
         title("Ultimos Proyectos"),
         links_button(
-            "Short URL",
-            "Acorta tus enlaces fácilmente.",
-            "icons/link-solid.svg",
+            "Este sitio web",
+            "Web de links y proyectos hecha con Python puro y Reflex.",
+            "/icons/briefcase-solid.svg",
             constants.SHORT_URL
         ),
         links_button(
-            "Typo Gunslinger",
+            "Short URL (W.I.P)",
+            "Acorta tus enlaces fácilmente.",
+            "/icons/link-solid.svg",
+            constants.SHORT_URL
+        ),
+        links_button(
+            "Typo Gunslinger (W.I.P)",
             "Desafíos tipográficos con un toque del salvaje oeste.",
-            "icons/keyboard-solid.svg",
+            "/icons/keyboard-solid.svg",
             constants.TYPO_GUNSLINGER
         ),
             links_button(
-            "QuirkyWeatherWizard",
+            "QuirkyWeatherWizard (W.I.P)",
             "Clima y humor personalizado.",
-            "icons/cloud-solid.svg",
+            "/icons/cloud-solid.svg",
             constants.QUIRKY_WEATHER_WIZARD
         ),
         links_button(
-            "RPS Versus",
+            "RPS Versus (W.I.P)",
             "Juego de cartas estratégico basado en el clásico piedra, papel o tijera.",
-            "icons/scissors-solid.svg",
+            "/icons/scissors-solid.svg",
             constants.RPS_VERSUS
         ),
         title("Contacto y CV"),
         links_button(
             "Email",
             "andrescolonia24@gmail.com",
-            "icons/envelope-solid.svg",
+            "/icons/envelope-solid.svg",
             f"mailto:{constants.EMAIL}"
         ),
         links_button(
             "CV",
             "Ver y descarga mi CV",
-            "icons/file-arrow-down-solid.svg",
+            "/icons/file-arrow-down-solid.svg",
             "/pdfs/AndresColonia-CV-2024-v6.pdf"
         ),
         width="100%",
